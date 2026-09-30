@@ -21,7 +21,7 @@ export function Stats() {
       <div className="wrap">
         <div className="stats-top">
           <div>
-            <div className="eyebrow">Proof in the reps</div>
+            <div className="eyebrow">Proof in the results</div>
             <h2 className="h2 disp" style={{ marginTop: 18 }}>The numbers bark for themselves.</h2>
           </div>
         </div>

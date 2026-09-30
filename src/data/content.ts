@@ -127,7 +127,6 @@ export const TRAINER = {
 };
 
 export const STATS = [
-  { v: 1200, s: "", l: "reps a week", l2: "on the training field" },
   { v: 4.9, s: "★", l: "from happy", l2: "pet parents", dec: 1 },
   { v: 98, s: "%", l: "of questions", l2: "answered same-day" },
 ];

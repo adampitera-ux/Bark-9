@@ -44,17 +44,6 @@ export function Hero() {
               <span>Meet your trainer</span>
             </a>
           </motion.div>
-          <motion.div className="chips" initial={{ opacity: 0 }} animate={entered ? { opacity: 1 } : {}} transition={{ delay: 1.5 }}>
-            <div>
-              <b>1,200</b>reps a week
-            </div>
-            <div>
-              <b>
-                <span className="star">★</span> 4.9
-              </b>
-              pet parents
-            </div>
-          </motion.div>
         </div>
 
         <motion.div className="hero-media" style={{ y }} initial={{ opacity: 0, scale: 0.9, rotate: 4 }} animate={entered ? { opacity: 1, scale: 1, rotate: 0 } : {}} transition={{ delay: 0.7, duration: 1, ease }}>
