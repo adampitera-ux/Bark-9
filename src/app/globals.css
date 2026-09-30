@@ -134,7 +134,7 @@ section { position: relative; }
 .hero-ctas { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 32px 0 40px; }
 .hero-ctas .btn { padding: 0 12px; }
 .hero .btn-ghost { color: var(--white); }
-.chips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 24px; border-top: 1px solid var(--line-dark); font-family: var(--display); text-transform: uppercase; letter-spacing: 0.14em; font-weight: 600; font-size: 11px; color: var(--text-dark); }
+.chips { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; padding-top: 24px; border-top: 1px solid var(--line-dark); font-family: var(--display); text-transform: uppercase; letter-spacing: 0.14em; font-weight: 600; font-size: 11px; color: var(--text-dark); }
 .chips b { display: block; margin-bottom: 4px; font-size: 26px; line-height: 1; color: var(--white); font-style: normal; font-weight: 900; font-stretch: 78%; letter-spacing: 0; }
 .chips .star { color: var(--lime); }
 .hero-media { position: relative; width: 100%; }
@@ -289,7 +289,8 @@ section { position: relative; }
 .stat { border-top: 1.5px solid var(--ink); padding-top: 16px; }
 .stat-v { font-family: var(--display); font-weight: 900; font-style: normal; font-stretch: 78%; font-size: clamp(52px, 12vw, 112px); line-height: 0.9; }
 .stat-l { margin-top: 10px; font-family: var(--display); font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 11px; line-height: 1.5; }
-@media (min-width: 1024px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } .stat-l { font-size: 13px; } }
+.stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
+@media (min-width: 1024px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } .stat:last-child:nth-child(odd) { grid-column: auto; } .stat-l { font-size: 13px; } }
 
 /* ── videos ── */
 .videos { background: var(--ink); color: var(--white); }
@@ -363,3 +364,13 @@ section { position: relative; }
 .splash-word { color: var(--gray); }
 .splash-word .nine { color: var(--lime); }
 .disp em, .h2 em { font-style: normal; }
+
+/* ── solo trainer ── */
+.t-solo { display: grid; gap: var(--gap); align-items: center; }
+.t-solo .t-card { cursor: default; max-width: 460px; }
+.t-solo .t-card img { filter: none; }
+.t-solo .t-quote { display: block; }
+.t-about p { font-size: var(--fs-lead); color: var(--muted); max-width: 520px; }
+.t-about ul { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 24px 0 32px; }
+.t-about li { border: 1.5px solid var(--ink); padding: 4px 14px; border-radius: 999px; font-family: var(--display); font-weight: 700; font-stretch: 85%; letter-spacing: 0.1em; font-size: 13px; text-transform: uppercase; }
+@media (min-width: 900px) { .t-solo { grid-template-columns: 0.8fr 1.2fr; gap: 64px; } .t-about p { font-size: 22px; } }

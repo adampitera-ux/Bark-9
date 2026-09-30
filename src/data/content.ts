@@ -115,15 +115,18 @@ export const ATHLETES = [
 
 export const WALL = ["/img/husky1.jpg", "/img/shep1.jpg", "/img/work1.jpg", "/img/husky4.jpg", "/img/shep2.jpg", "/img/husky3.jpg", "/img/husky2.jpg"];
 
-export const TEAM = [
-  { role: "Head Trainer", cred: "Behavior & obedience", quote: "Clear rules. Big rewards.", ask: "behavior plans", facts: ["Obedience", "Behavior", "Leash skills"], fun: "Believes every dog is a champion in progress.", img: "/img/husky1.jpg", pos: "50% 40%" },
-  { role: "Protection Trainer", cred: "Control & protection work", quote: "Control before protection.", ask: "protection dogs", facts: ["Handler control", "Threat awareness", "Protection work"], fun: "Wants a dog that works when needed and stays neutral when not.", img: "/img/work1.jpg", pos: "50% 35%" },
-  { role: "Puppy Trainer", cred: "Early foundations", quote: "Start small. Win daily.", ask: "puppy plans", facts: ["Foundations", "Socialization", "House manners"], fun: "Smuggles treats in every pocket.", img: "/img/husky2.jpg", pos: "50% 45%" },
-  { role: "Handler Trainer", cred: "Handler skills", quote: "We train you too.", ask: "your first session", facts: ["Handling", "Timing", "Consistency"], fun: "Convinced the handler is half the team.", img: "/img/shep1.jpg", pos: "40% 30%" },
-];
+export const TRAINER = {
+  role: "Owner & Trainer",
+  cred: "BARK9 Training",
+  quote: "Control before protection.",
+  fun: "Every session, every dog and every plan is handled personally — built on communication, structure and trust.",
+  facts: ["Puppy training", "Obedience", "Protection", "Behavior modification", "Handler skills"],
+  ask: "your first session",
+  img: "/img/work1.jpg",
+  pos: "50% 35%",
+};
 
 export const STATS = [
-  { v: 10, s: "", l: "years of", l2: "wagging tails" },
   { v: 1200, s: "", l: "reps a week", l2: "on the training field" },
   { v: 4.9, s: "★", l: "from happy", l2: "pet parents", dec: 1 },
   { v: 98, s: "%", l: "of questions", l2: "answered same-day" },

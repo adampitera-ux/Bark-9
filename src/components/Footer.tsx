@@ -19,7 +19,7 @@ export function Footer() {
             <ul>
               <li><a href="#programs">Programs</a></li>
               <li><a href="#athletes">Athletes</a></li>
-              <li><a href="#trainers">Trainers</a></li>
+              <li><a href="#trainer">Trainer</a></li>
               <li><a href="#watch">Watch</a></li>
             </ul>
           </div>

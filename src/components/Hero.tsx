@@ -40,14 +40,11 @@ export function Hero() {
             <a href="#book" className="btn btn-primary">
               <span>Book a session →</span>
             </a>
-            <a href="#trainers" className="btn btn-ghost">
-              <span>Meet the trainers</span>
+            <a href="#trainer" className="btn btn-ghost">
+              <span>Meet your trainer</span>
             </a>
           </motion.div>
           <motion.div className="chips" initial={{ opacity: 0 }} animate={entered ? { opacity: 1 } : {}} transition={{ delay: 1.5 }}>
-            <div>
-              <b>EST. 2016</b>on the field
-            </div>
             <div>
               <b>1,200</b>reps a week
             </div>
