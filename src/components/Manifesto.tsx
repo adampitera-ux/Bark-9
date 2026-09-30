@@ -6,7 +6,7 @@ function Word({ w, p, a, b, hl }: { w: string; p: MotionValue<number>; a: number
   const o = useTransform(p, [a, b], [0.16, 1]);
   const y = useTransform(p, [a, b], [14, 0]);
   return (
-    <motion.span className="w" style={{ opacity: o, y, color: hl ? "var(--accent)" : undefined }}>
+    <motion.span className="w" style={{ opacity: o, y, color: hl ? "var(--lime)" : undefined }}>
       {w}
     </motion.span>
   );
@@ -30,8 +30,8 @@ export function Manifesto() {
     <section className="manifesto" id="about">
       <div className="wrap">
         <div className="eyebrow">Welcome to Bark9</div>
-        <WordReveal className="manifesto-text disp" text="Not obedience school. A training ground for the dog who runs your whole heart." highlight={["training", "ground"]} />
-        <p className="manifesto-sub">Positive · Structured · Sport-minded</p>
+        <WordReveal className="manifesto-text disp" text="More than obedience. A training ground for the dog who runs your whole heart." highlight={["training", "ground"]} />
+        <p className="manifesto-sub">Communication · Structure · Trust</p>
       </div>
     </section>
   );

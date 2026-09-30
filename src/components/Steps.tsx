@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { AnimatePresence, motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 import { STEPS } from "@/data/content";
 
-const PHOTOS = ["/img/husky2.jpg", "/img/agility2.jpg", "/img/shep2.jpg"];
+const PHOTOS = ["/img/husky2.jpg", "/img/work1.jpg", "/img/shep2.jpg"];
 
 export function Steps() {
   const ref = useRef<HTMLElement>(null);

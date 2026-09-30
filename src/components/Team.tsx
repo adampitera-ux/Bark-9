@@ -6,18 +6,18 @@ import { TEAM } from "@/data/content";
 export function Team() {
   const [open, setOpen] = useState<number | null>(null);
   return (
-    <section className="sec" id="coaches" style={{ background: "var(--ice2)" }}>
+    <section className="sec" id="trainers" style={{ background: "var(--paper-2)" }}>
       <div className="wrap">
         <div className="team-head">
           <div>
-            <div className="eyebrow">The coaching staff</div>
+            <div className="eyebrow">The training staff</div>
             <h2 className="h2 disp">
               Tough love.
               <br />
               <em>Big rewards.</em>
             </h2>
           </div>
-          <p className="lead">Four coaches, one shared weakness for wagging tails. Hover a card to see who to ask about what.</p>
+          <p className="lead">Four trainers, one shared weakness for wagging tails. Hover or tap a card to see who to ask about what.</p>
         </div>
         <div className="t-grid">
           {TEAM.map((t, i) => (

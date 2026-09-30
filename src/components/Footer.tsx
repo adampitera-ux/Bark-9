@@ -12,14 +12,14 @@ export function Footer() {
             <div className="foot-logo">
               <Logo />
             </div>
-            <p className="foot-blurb">Dog training built for sport, focus and a lifelong bond.</p>
+            <p className="foot-blurb">Puppy, obedience, protection and behavior training built on communication, structure and trust.</p>
           </div>
           <div>
             <h5>Explore</h5>
             <ul>
               <li><a href="#programs">Programs</a></li>
               <li><a href="#athletes">Athletes</a></li>
-              <li><a href="#coaches">Coaches</a></li>
+              <li><a href="#trainers">Trainers</a></li>
               <li><a href="#watch">Watch</a></li>
             </ul>
           </div>
@@ -55,9 +55,9 @@ export function Footer() {
         </div>
 
         <div className="foot-bottom">
-          <span>© 2026 Bark9 Training. All rights reserved.</span>
+          <span>© 2026 BARK9 Training. All rights reserved.</span>
           <span>
-            Photos: Wikimedia Commons contributors (CC BY / CC BY-SA / public domain) — swap in your own.
+            Some photos: Wikimedia Commons contributors (CC BY / CC BY-SA / public domain).
           </span>
         </div>
         <p className="foot-easter">Good human — you made it all the way down. Sit. Stay. Treat yourself.</p>

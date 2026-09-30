@@ -19,7 +19,7 @@ export function Roster() {
           <h2 className="h2 disp">
             The <em>roster.</em>
           </h2>
-          <p className="lead">Every face on this wall has a training log, a favourite reward and a personal best.</p>
+          <p className="lead">Every face on this wall has a training log, a favorite reward and a personal best.</p>
         </div>
         <div className="r-grid">
           {list.map((a, i) => (

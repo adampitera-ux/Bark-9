@@ -19,13 +19,13 @@ export function Splash() {
           <div className="splash-in">
             <div className="splash-word disp" aria-label="Bark9">
               {letters.map((l, i) => (
-                <motion.span key={i} initial={{ y: "110%", rotate: 8 }} animate={{ y: 0, rotate: 0 }} transition={{ delay: 0.15 + i * 0.08, type: "spring", stiffness: 160, damping: 16 }}>
+                <motion.span key={i} className={l === "9" ? "nine" : ""} initial={{ y: "110%", rotate: 8 }} animate={{ y: 0, rotate: 0 }} transition={{ delay: 0.15 + i * 0.08, type: "spring", stiffness: 160, damping: 16 }}>
                   {l}
                 </motion.span>
               ))}
             </div>
             <motion.p className="splash-sub" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }}>
-              Dog training · Built for sport
+              Obedience · Protection · Behavior
             </motion.p>
           </div>
         </motion.div>

@@ -1,9 +1,11 @@
 "use client";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { PROGRAMS } from "@/data/content";
 import { ProgramIcon } from "./Icons";
 
 export function Programs() {
+  const [open, setOpen] = useState<string | null>(null);
   return (
     <section className="sec dark" id="programs">
       <div className="wrap">
@@ -16,7 +18,7 @@ export function Programs() {
               <em>Zero fluff.</em>
             </h2>
           </div>
-          <div className="count">06 DISCIPLINES</div>
+          <div className="count">04 PROGRAMS</div>
         </div>
         <div className="prog-grid">
           {PROGRAMS.map((p, i) => (
@@ -35,9 +37,18 @@ export function Programs() {
               <h3 className="disp">{p.title}</h3>
               <div className="card-sub">{p.sub}</div>
               <p>{p.body}</p>
-              <div className="card-more">
-                Explore program <i>→</i>
-              </div>
+              <AnimatePresence initial={false}>
+                {open === p.key && (
+                  <motion.div className="card-detail" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}>
+                    {p.more.map((t) => (
+                      <p key={t}>{t}</p>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+              <button className={`card-more ${open === p.key ? "on" : ""}`} aria-expanded={open === p.key} onClick={() => setOpen(open === p.key ? null : p.key)}>
+                {open === p.key ? "Show less" : "Explore program"} <i>→</i>
+              </button>
             </motion.article>
           ))}
         </div>
