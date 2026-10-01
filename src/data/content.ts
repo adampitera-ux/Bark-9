@@ -119,7 +119,12 @@ export const TRAINER = {
   role: "Owner & Trainer",
   cred: "BARK9 Training",
   quote: "Control before protection.",
-  fun: "Every session, every dog and every plan is handled personally — built on communication, structure and trust.",
+  bio: [
+    "My passion for dog training began when I was a teenager, training a Great Dane for the show ring. That early experience sparked a lifelong interest in dogs, training, and the unique bond that develops between a dog and its handler.",
+    "Not long after, I discovered my love for German Shepherds. I was drawn to their intelligence, versatility, work ethic, and willingness to learn. Their ability to form a strong partnership with their handler made a lasting impression on me and deepened my passion for working dogs and training.",
+    "Today, that passion continues with my own Dutch Shepherd, whom I am actively training for **PSA (Protection Sports Association)**. Working toward PSA has given me the opportunity to continue developing my skills while challenging both myself and my dog through obedience, control, and protection work.",
+    "Through BARK9 Training, my goal is to share that experience and passion with other dog owners. I believe effective training is built on communication, consistency, trust, and understanding—creating not just a well-trained dog, but a strong partnership between dog and handler.",
+  ],
   facts: ["Puppy training", "Obedience", "Protection", "Behavior modification", "Handler skills"],
   ask: "your first session",
   img: "/img/work1.jpg",

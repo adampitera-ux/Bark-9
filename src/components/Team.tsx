@@ -28,7 +28,12 @@ export function Team() {
             </div>
           </div>
           <div className="t-about">
-            <p>{t.fun}</p>
+            <h3 className="t-about-h disp">About the Trainer</h3>
+            {t.bio.map((para, i) => (
+              <p key={i} className={i === 0 ? "t-about-lead" : undefined}>
+                {para.split("**").map((part, k) => (k % 2 ? <strong key={k}>{part}</strong> : part))}
+              </p>
+            ))}
             <ul>
               {t.facts.map((f) => (
                 <li key={f}>{f}</li>
