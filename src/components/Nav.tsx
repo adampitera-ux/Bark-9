@@ -5,7 +5,6 @@ import { Logo } from "./Icons";
 
 const LINKS = [
   ["Programs", "#programs"],
-  ["Athletes", "#athletes"],
   ["Trainer", "#trainer"],
   ["Watch", "#watch"],
 ];

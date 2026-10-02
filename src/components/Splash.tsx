@@ -8,7 +8,7 @@ export function Splash() {
   const letters = "BARK9".split("");
   useEffect(() => {
     if (entered) return;
-    const t = setTimeout(() => enter("husky"), 1500);
+    const t = setTimeout(() => enter(), 1500);
     return () => clearTimeout(t);
   }, [entered, enter]);
   return (

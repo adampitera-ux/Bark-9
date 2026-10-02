@@ -1,5 +1,3 @@
-export type Mode = "husky" | "shepherd";
-
 export const SOCIAL = {
   tiktok: "https://www.tiktok.com/@bark9training",
   instagram: "https://www.instagram.com/bark9training",
@@ -16,34 +14,6 @@ export const SOCIAL = {
  * The profile embeds below them always work with no links.
  */
 export const VIDEOS: { platform: "tiktok" | "instagram"; url: string; caption?: string }[] = [];
-
-export const MODES: Record<
-  Mode,
-  { label: string; welcome: string; other: string; hero: string; heroName: string; heroTag: string; bark: string; photo: string; pos: string }
-> = {
-  husky: {
-    label: "HUSKY",
-    welcome: "Welcome, husky person",
-    other: "shepherd",
-    hero: "/img/husky1.jpg",
-    heroName: "Koda — athlete nº 214",
-    heroTag: "a very stubborn, very fast boy",
-    bark: "AWOOO!",
-    photo: "/img/husky1.jpg",
-    pos: "50% 40%",
-  },
-  shepherd: {
-    label: "SHEPHERD",
-    welcome: "Welcome, shepherd person",
-    other: "husky",
-    hero: "/img/shep1.jpg",
-    heroName: "Ranger — athlete nº 087",
-    heroTag: "locked in. ball secured.",
-    bark: "WOOF!",
-    photo: "/img/shep1.jpg",
-    pos: "40% 30%",
-  },
-};
 
 export const TICKER = ["OBEDIENCE", "PROTECTION", "PUPPY TRAINING", "BEHAVIOR MODIFICATION", "RECALL", "IMPULSE CONTROL", "CONTROL BEFORE PROTECTION"];
 
@@ -103,17 +73,6 @@ export const STEPS = [
   { t: "We train.", b: "Structured sessions with clear communication, consistent markers and real rewards. You learn the drills too, so it sticks past the last session." },
   { t: "Home, under control.", b: "A written game plan, follow-up video check-ins and a dog who finally listens — in the park, on the trail, at the door." },
 ];
-
-export const ATHLETES = [
-  { name: "Koda", breed: "Siberian Husky", tag: "professional escape artist", lvl: "Recall L3", move: "The Houdini sit", img: "/img/husky1.jpg", pos: "50% 45%", story: "Arrived believing fences were suggestions. Now holds a 60-second stay and only *considers* the neighbor's gate." },
-  { name: "Ranger", breed: "German Shepherd", tag: "locked in. ball secured.", lvl: "Obedience L4", move: "Heel, then heel harder", img: "/img/shep1.jpg", pos: "40% 30%", story: "Zero-to-focus in three sessions. Protects his tennis ball with the seriousness of a bank vault." },
-  { name: "Storm", breed: "Belgian Malinois", tag: "all drive, all control", lvl: "Protection P3", move: "Out on command", img: "/img/work1.jpg", pos: "50% 35%", story: "Endless drive channeled into a clean out and a calm, neutral settle. Works when asked, off when not." },
-  { name: "Luna", breed: "Siberian Husky", tag: "the opera singer", lvl: "Behavior B2", move: "Quiet-on-cue", img: "/img/husky4.jpg", pos: "50% 40%", story: "Used to narrate every passing dog at full volume. Now trades the aria for a calm check-in." },
-  { name: "Duke", breed: "German Shepherd", tag: "the quiet guardian", lvl: "Protection P2", move: "Watch and hold", img: "/img/shep2.jpg", pos: "55% 50%", story: "Confident on the fence line, neutral everywhere else. Control first, always." },
-  { name: "Nova", breed: "Husky Mix", tag: "eyes like a winter sky", lvl: "Puppy P2", move: "Sit for snacks", img: "/img/husky2.jpg", pos: "50% 45%", story: "Our newest rookie. Learned 'sit' in a single afternoon and has not stopped bragging." },
-];
-
-export const WALL = ["/img/husky1.jpg", "/img/shep1.jpg", "/img/work1.jpg", "/img/husky4.jpg", "/img/shep2.jpg", "/img/husky3.jpg", "/img/husky2.jpg"];
 
 export const TRAINER = {
   role: "Owner & Trainer",

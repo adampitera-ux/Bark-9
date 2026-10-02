@@ -5,10 +5,7 @@ import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
 import { Manifesto } from "@/components/Manifesto";
 import { Programs } from "@/components/Programs";
-import { Compare } from "@/components/Compare";
 import { Steps } from "@/components/Steps";
-import { Roster } from "@/components/Roster";
-import { Wall } from "@/components/Wall";
 import { Team } from "@/components/Team";
 import { Stats } from "@/components/Stats";
 import { Videos } from "@/components/Videos";
@@ -26,10 +23,7 @@ export default function Home() {
         <Marquee />
         <Manifesto />
         <Programs />
-        <Compare />
         <Steps />
-        <Roster />
-        <Wall />
         <Team />
         <Stats />
         <Videos />

@@ -18,7 +18,6 @@ export function Footer() {
             <h5>Explore</h5>
             <ul>
               <li><a href="#programs">Programs</a></li>
-              <li><a href="#athletes">Athletes</a></li>
               <li><a href="#trainer">Trainer</a></li>
               <li><a href="#watch">Watch</a></li>
             </ul>

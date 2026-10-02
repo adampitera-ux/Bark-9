@@ -20,7 +20,7 @@ export function Hero() {
             Obedience · Protection · Behavior
           </motion.div>
           <h1 className="hero-h1 disp">
-            {["Where every", "good dog", "becomes an", "athlete."].map((t, i) => (
+            {["Building", "confidence on", "both ends of", "the leash."].map((t, i) => (
               <span className="l" key={t}>
                 <motion.span
                   className={i === 1 ? "hl" : i === 3 ? "out" : ""}
